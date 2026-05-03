@@ -1,0 +1,606 @@
+<html>
+<head>
+<meta charset="UTF-8">
+</head>
+<body>
+
+<p class="p1">&lt;!DOCTYPE html&gt;</p>
+<p class="p1"><br></p>
+<p class="p1">&lt;html lang="zh-Hant"&gt;</p>
+<p class="p1"><br></p>
+<p class="p1">&lt;head&gt;</p>
+<p class="p1"><br></p>
+<p class="p1">&lt;meta charset="UTF-8" /&gt;</p>
+<p class="p1"><br></p>
+<p class="p1">&lt;meta name="viewport" content="width=device-width, initial-scale=1.0" /&gt;</p>
+<p class="p1"><br></p>
+<p class="p1">&lt;title&gt;稻庄休閒農場｜走進宜蘭三星的田野日常&lt;/title&gt;</p>
+<p class="p1"><br></p>
+<p class="p1">&lt;style&gt;</p>
+<p class="p1"><br></p>
+<p class="p1">* {</p>
+<p class="p1"><br></p>
+<p class="p1"><span class="Apple-converted-space">  </span>box-sizing: border-box;</p>
+<p class="p1"><br></p>
+<p class="p1"><span class="Apple-converted-space">  </span>margin: 0;</p>
+<p class="p1"><br></p>
+<p class="p1"><span class="Apple-converted-space">  </span>padding: 0;</p>
+<p class="p1"><br></p>
+<p class="p1">}</p>
+<p class="p1"><br></p>
+<p class="p1">body {</p>
+<p class="p1"><br></p>
+<p class="p1"><span class="Apple-converted-space">  </span>font-family: "Noto Sans TC", "Microsoft JhengHei", sans-serif;</p>
+<p class="p1"><br></p>
+<p class="p1"><span class="Apple-converted-space">  </span>background: #f7f4ec;</p>
+<p class="p1"><br></p>
+<p class="p1"><span class="Apple-converted-space">  </span>color: #2f3328;</p>
+<p class="p1"><br></p>
+<p class="p1"><span class="Apple-converted-space">  </span>line-height: 1.8;</p>
+<p class="p1"><br></p>
+<p class="p1">}</p>
+<p class="p1"><br></p>
+<p class="p1">.hero {</p>
+<p class="p1"><br></p>
+<p class="p1"><span class="Apple-converted-space">  </span>min-height: 90vh;</p>
+<p class="p1"><br></p>
+<p class="p1"><span class="Apple-converted-space">  </span>background:</p>
+<p class="p1"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>linear-gradient(rgba(40,55,35,.45), rgba(40,55,35,.55)),</p>
+<p class="p1"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>url("https://images.unsplash.com/photo-1500382017468-9049fed747ef?auto=format&amp;fit=crop&amp;w=1600&amp;q=80");</p>
+<p class="p1"><br></p>
+<p class="p1"><span class="Apple-converted-space">  </span>background-size: cover;</p>
+<p class="p1"><br></p>
+<p class="p1"><span class="Apple-converted-space">  </span>background-position: center;</p>
+<p class="p1"><br></p>
+<p class="p1"><span class="Apple-converted-space">  </span>display: flex;</p>
+<p class="p1"><br></p>
+<p class="p1"><span class="Apple-converted-space">  </span>align-items: center;</p>
+<p class="p1"><br></p>
+<p class="p1"><span class="Apple-converted-space">  </span>padding: 40px 8%;</p>
+<p class="p1"><br></p>
+<p class="p1"><span class="Apple-converted-space">  </span>color: white;</p>
+<p class="p1"><br></p>
+<p class="p1">}</p>
+<p class="p1"><br></p>
+<p class="p1">.hero-content {</p>
+<p class="p1"><br></p>
+<p class="p1"><span class="Apple-converted-space">  </span>max-width: 720px;</p>
+<p class="p1"><br></p>
+<p class="p1">}</p>
+<p class="p1"><br></p>
+<p class="p1">.hero h1 {</p>
+<p class="p1"><br></p>
+<p class="p1"><span class="Apple-converted-space">  </span>font-size: clamp(36px, 6vw, 72px);</p>
+<p class="p1"><br></p>
+<p class="p1"><span class="Apple-converted-space">  </span>line-height: 1.15;</p>
+<p class="p1"><br></p>
+<p class="p1"><span class="Apple-converted-space">  </span>margin-bottom: 24px;</p>
+<p class="p1"><br></p>
+<p class="p1"><span class="Apple-converted-space">  </span>letter-spacing: 2px;</p>
+<p class="p1"><br></p>
+<p class="p1">}</p>
+<p class="p1"><br></p>
+<p class="p1">.hero p {</p>
+<p class="p1"><br></p>
+<p class="p1"><span class="Apple-converted-space">  </span>font-size: 20px;</p>
+<p class="p1"><br></p>
+<p class="p1"><span class="Apple-converted-space">  </span>opacity: .95;</p>
+<p class="p1"><br></p>
+<p class="p1">}</p>
+<p class="p1"><br></p>
+<p class="p1">.badge {</p>
+<p class="p1"><br></p>
+<p class="p1"><span class="Apple-converted-space">  </span>display: inline-block;</p>
+<p class="p1"><br></p>
+<p class="p1"><span class="Apple-converted-space">  </span>background: rgba(255,255,255,.18);</p>
+<p class="p1"><br></p>
+<p class="p1"><span class="Apple-converted-space">  </span>border: 1px solid rgba(255,255,255,.35);</p>
+<p class="p1"><br></p>
+<p class="p1"><span class="Apple-converted-space">  </span>padding: 8px 18px;</p>
+<p class="p1"><br></p>
+<p class="p1"><span class="Apple-converted-space">  </span>border-radius: 999px;</p>
+<p class="p1"><br></p>
+<p class="p1"><span class="Apple-converted-space">  </span>margin-bottom: 24px;</p>
+<p class="p1"><br></p>
+<p class="p1"><span class="Apple-converted-space">  </span>backdrop-filter: blur(8px);</p>
+<p class="p1"><br></p>
+<p class="p1">}</p>
+<p class="p1"><br></p>
+<p class="p1">section {</p>
+<p class="p1"><br></p>
+<p class="p1"><span class="Apple-converted-space">  </span>padding: 80px 8%;</p>
+<p class="p1"><br></p>
+<p class="p1">}</p>
+<p class="p1"><br></p>
+<p class="p1">.container {</p>
+<p class="p1"><br></p>
+<p class="p1"><span class="Apple-converted-space">  </span>max-width: 1080px;</p>
+<p class="p1"><br></p>
+<p class="p1"><span class="Apple-converted-space">  </span>margin: auto;</p>
+<p class="p1"><br></p>
+<p class="p1">}</p>
+<p class="p1"><br></p>
+<p class="p1">.section-title {</p>
+<p class="p1"><br></p>
+<p class="p1"><span class="Apple-converted-space">  </span>font-size: 32px;</p>
+<p class="p1"><br></p>
+<p class="p1"><span class="Apple-converted-space">  </span>margin-bottom: 20px;</p>
+<p class="p1"><br></p>
+<p class="p1"><span class="Apple-converted-space">  </span>color: #3d4a2f;</p>
+<p class="p1"><br></p>
+<p class="p1">}</p>
+<p class="p1"><br></p>
+<p class="p1">.intro {</p>
+<p class="p1"><br></p>
+<p class="p1"><span class="Apple-converted-space">  </span>background: white;</p>
+<p class="p1"><br></p>
+<p class="p1">}</p>
+<p class="p1"><br></p>
+<p class="p1">.cards {</p>
+<p class="p1"><br></p>
+<p class="p1"><span class="Apple-converted-space">  </span>display: grid;</p>
+<p class="p1"><br></p>
+<p class="p1"><span class="Apple-converted-space">  </span>grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));</p>
+<p class="p1"><br></p>
+<p class="p1"><span class="Apple-converted-space">  </span>gap: 24px;</p>
+<p class="p1"><br></p>
+<p class="p1"><span class="Apple-converted-space">  </span>margin-top: 36px;</p>
+<p class="p1"><br></p>
+<p class="p1">}</p>
+<p class="p1"><br></p>
+<p class="p1">.card {</p>
+<p class="p1"><br></p>
+<p class="p1"><span class="Apple-converted-space">  </span>background: #fff;</p>
+<p class="p1"><br></p>
+<p class="p1"><span class="Apple-converted-space">  </span>border-radius: 22px;</p>
+<p class="p1"><br></p>
+<p class="p1"><span class="Apple-converted-space">  </span>padding: 28px;</p>
+<p class="p1"><br></p>
+<p class="p1"><span class="Apple-converted-space">  </span>box-shadow: 0 16px 40px rgba(70, 80, 50, .08);</p>
+<p class="p1"><br></p>
+<p class="p1"><span class="Apple-converted-space">  </span>border: 1px solid #eee6d6;</p>
+<p class="p1"><br></p>
+<p class="p1">}</p>
+<p class="p1"><br></p>
+<p class="p1">.card h3 {</p>
+<p class="p1"><br></p>
+<p class="p1"><span class="Apple-converted-space">  </span>margin-bottom: 12px;</p>
+<p class="p1"><br></p>
+<p class="p1"><span class="Apple-converted-space">  </span>color: #58733d;</p>
+<p class="p1"><br></p>
+<p class="p1">}</p>
+<p class="p1"><br></p>
+<p class="p1">.highlight {</p>
+<p class="p1"><br></p>
+<p class="p1"><span class="Apple-converted-space">  </span>display: inline-block;</p>
+<p class="p1"><br></p>
+<p class="p1"><span class="Apple-converted-space">  </span>margin-top: 16px;</p>
+<p class="p1"><br></p>
+<p class="p1"><span class="Apple-converted-space">  </span>padding: 8px 14px;</p>
+<p class="p1"><br></p>
+<p class="p1"><span class="Apple-converted-space">  </span>background: #edf4df;</p>
+<p class="p1"><br></p>
+<p class="p1"><span class="Apple-converted-space">  </span>color: #48662f;</p>
+<p class="p1"><br></p>
+<p class="p1"><span class="Apple-converted-space">  </span>border-radius: 999px;</p>
+<p class="p1"><br></p>
+<p class="p1"><span class="Apple-converted-space">  </span>cursor: pointer;</p>
+<p class="p1"><br></p>
+<p class="p1"><span class="Apple-converted-space">  </span>font-weight: 600;</p>
+<p class="p1"><br></p>
+<p class="p1"><span class="Apple-converted-space">  </span>transition: .25s;</p>
+<p class="p1"><br></p>
+<p class="p1">}</p>
+<p class="p1"><br></p>
+<p class="p1">.highlight:hover {</p>
+<p class="p1"><br></p>
+<p class="p1"><span class="Apple-converted-space">  </span>background: #dbeabb;</p>
+<p class="p1"><br></p>
+<p class="p1"><span class="Apple-converted-space">  </span>transform: translateY(-2px);</p>
+<p class="p1"><br></p>
+<p class="p1">}</p>
+<p class="p1"><br></p>
+<p class="p1">.reminder {</p>
+<p class="p1"><br></p>
+<p class="p1"><span class="Apple-converted-space">  </span>background: linear-gradient(135deg, #eef5df, #fff9ec);</p>
+<p class="p1"><br></p>
+<p class="p1">}</p>
+<p class="p1"><br></p>
+<p class="p1">.reminder-box {</p>
+<p class="p1"><br></p>
+<p class="p1"><span class="Apple-converted-space">  </span>background: white;</p>
+<p class="p1"><br></p>
+<p class="p1"><span class="Apple-converted-space">  </span>border-radius: 28px;</p>
+<p class="p1"><br></p>
+<p class="p1"><span class="Apple-converted-space">  </span>padding: 36px;</p>
+<p class="p1"><br></p>
+<p class="p1"><span class="Apple-converted-space">  </span>box-shadow: 0 18px 45px rgba(70, 80, 50, .1);</p>
+<p class="p1"><br></p>
+<p class="p1">}</p>
+<p class="p1"><br></p>
+<p class="p1">.reminder-list {</p>
+<p class="p1"><br></p>
+<p class="p1"><span class="Apple-converted-space">  </span>margin-top: 20px;</p>
+<p class="p1"><br></p>
+<p class="p1">}</p>
+<p class="p1"><br></p>
+<p class="p1">.reminder-item {</p>
+<p class="p1"><br></p>
+<p class="p1"><span class="Apple-converted-space">  </span>margin: 16px 0;</p>
+<p class="p1"><br></p>
+<p class="p1"><span class="Apple-converted-space">  </span>padding: 18px 22px;</p>
+<p class="p1"><br></p>
+<p class="p1"><span class="Apple-converted-space">  </span>border-left: 5px solid #8dad5a;</p>
+<p class="p1"><br></p>
+<p class="p1"><span class="Apple-converted-space">  </span>background: #faf8f1;</p>
+<p class="p1"><br></p>
+<p class="p1"><span class="Apple-converted-space">  </span>border-radius: 14px;</p>
+<p class="p1"><br></p>
+<p class="p1"><span class="Apple-converted-space">  </span>cursor: pointer;</p>
+<p class="p1"><br></p>
+<p class="p1">}</p>
+<p class="p1"><br></p>
+<p class="p1">.cta {</p>
+<p class="p1"><br></p>
+<p class="p1"><span class="Apple-converted-space">  </span>text-align: center;</p>
+<p class="p1"><br></p>
+<p class="p1"><span class="Apple-converted-space">  </span>background: #35462b;</p>
+<p class="p1"><br></p>
+<p class="p1"><span class="Apple-converted-space">  </span>color: white;</p>
+<p class="p1"><br></p>
+<p class="p1">}</p>
+<p class="p1"><br></p>
+<p class="p1">.cta h2 {</p>
+<p class="p1"><br></p>
+<p class="p1"><span class="Apple-converted-space">  </span>font-size: 34px;</p>
+<p class="p1"><br></p>
+<p class="p1"><span class="Apple-converted-space">  </span>margin-bottom: 18px;</p>
+<p class="p1"><br></p>
+<p class="p1">}</p>
+<p class="p1"><br></p>
+<p class="p1">.cta p {</p>
+<p class="p1"><br></p>
+<p class="p1"><span class="Apple-converted-space">  </span>max-width: 720px;</p>
+<p class="p1"><br></p>
+<p class="p1"><span class="Apple-converted-space">  </span>margin: 0 auto 32px;</p>
+<p class="p1"><br></p>
+<p class="p1"><span class="Apple-converted-space">  </span>opacity: .9;</p>
+<p class="p1"><br></p>
+<p class="p1">}</p>
+<p class="p1"><br></p>
+<p class="p1">button {</p>
+<p class="p1"><br></p>
+<p class="p1"><span class="Apple-converted-space">  </span>border: none;</p>
+<p class="p1"><br></p>
+<p class="p1"><span class="Apple-converted-space">  </span>background: #f5d46b;</p>
+<p class="p1"><br></p>
+<p class="p1"><span class="Apple-converted-space">  </span>color: #2f3328;</p>
+<p class="p1"><br></p>
+<p class="p1"><span class="Apple-converted-space">  </span>padding: 16px 34px;</p>
+<p class="p1"><br></p>
+<p class="p1"><span class="Apple-converted-space">  </span>border-radius: 999px;</p>
+<p class="p1"><br></p>
+<p class="p1"><span class="Apple-converted-space">  </span>font-size: 18px;</p>
+<p class="p1"><br></p>
+<p class="p1"><span class="Apple-converted-space">  </span>font-weight: 700;</p>
+<p class="p1"><br></p>
+<p class="p1"><span class="Apple-converted-space">  </span>cursor: pointer;</p>
+<p class="p1"><br></p>
+<p class="p1"><span class="Apple-converted-space">  </span>transition: .25s;</p>
+<p class="p1"><br></p>
+<p class="p1">}</p>
+<p class="p1"><br></p>
+<p class="p1">button:hover {</p>
+<p class="p1"><br></p>
+<p class="p1"><span class="Apple-converted-space">  </span>transform: translateY(-3px);</p>
+<p class="p1"><br></p>
+<p class="p1"><span class="Apple-converted-space">  </span>box-shadow: 0 12px 28px rgba(0,0,0,.2);</p>
+<p class="p1"><br></p>
+<p class="p1">}</p>
+<p class="p1"><br></p>
+<p class="p1">.fade-in {</p>
+<p class="p1"><br></p>
+<p class="p1"><span class="Apple-converted-space">  </span>opacity: 0;</p>
+<p class="p1"><br></p>
+<p class="p1"><span class="Apple-converted-space">  </span>transform: translateY(40px);</p>
+<p class="p1"><br></p>
+<p class="p1"><span class="Apple-converted-space">  </span>transition: all .8s ease;</p>
+<p class="p1"><br></p>
+<p class="p1">}</p>
+<p class="p1"><br></p>
+<p class="p1">.fade-in.show {</p>
+<p class="p1"><br></p>
+<p class="p1"><span class="Apple-converted-space">  </span>opacity: 1;</p>
+<p class="p1"><br></p>
+<p class="p1"><span class="Apple-converted-space">  </span>transform: translateY(0);</p>
+<p class="p1"><br></p>
+<p class="p1">}</p>
+<p class="p1"><br></p>
+<p class="p1">.modal {</p>
+<p class="p1"><br></p>
+<p class="p1"><span class="Apple-converted-space">  </span>position: fixed;</p>
+<p class="p1"><br></p>
+<p class="p1"><span class="Apple-converted-space">  </span>inset: 0;</p>
+<p class="p1"><br></p>
+<p class="p1"><span class="Apple-converted-space">  </span>background: rgba(0,0,0,.45);</p>
+<p class="p1"><br></p>
+<p class="p1"><span class="Apple-converted-space">  </span>display: none;</p>
+<p class="p1"><br></p>
+<p class="p1"><span class="Apple-converted-space">  </span>align-items: center;</p>
+<p class="p1"><br></p>
+<p class="p1"><span class="Apple-converted-space">  </span>justify-content: center;</p>
+<p class="p1"><br></p>
+<p class="p1"><span class="Apple-converted-space">  </span>padding: 24px;</p>
+<p class="p1"><br></p>
+<p class="p1"><span class="Apple-converted-space">  </span>z-index: 99;</p>
+<p class="p1"><br></p>
+<p class="p1">}</p>
+<p class="p1"><br></p>
+<p class="p1">.modal-content {</p>
+<p class="p1"><br></p>
+<p class="p1"><span class="Apple-converted-space">  </span>background: white;</p>
+<p class="p1"><br></p>
+<p class="p1"><span class="Apple-converted-space">  </span>color: #2f3328;</p>
+<p class="p1"><br></p>
+<p class="p1"><span class="Apple-converted-space">  </span>max-width: 420px;</p>
+<p class="p1"><br></p>
+<p class="p1"><span class="Apple-converted-space">  </span>padding: 32px;</p>
+<p class="p1"><br></p>
+<p class="p1"><span class="Apple-converted-space">  </span>border-radius: 24px;</p>
+<p class="p1"><br></p>
+<p class="p1"><span class="Apple-converted-space">  </span>text-align: center;</p>
+<p class="p1"><br></p>
+<p class="p1"><span class="Apple-converted-space">  </span>box-shadow: 0 20px 60px rgba(0,0,0,.25);</p>
+<p class="p1"><br></p>
+<p class="p1">}</p>
+<p class="p1"><br></p>
+<p class="p1">.modal-content h3 {</p>
+<p class="p1"><br></p>
+<p class="p1"><span class="Apple-converted-space">  </span>margin-bottom: 12px;</p>
+<p class="p1"><br></p>
+<p class="p1"><span class="Apple-converted-space">  </span>color: #58733d;</p>
+<p class="p1"><br></p>
+<p class="p1">}</p>
+<p class="p1"><br></p>
+<p class="p1">.close {</p>
+<p class="p1"><br></p>
+<p class="p1"><span class="Apple-converted-space">  </span>margin-top: 24px;</p>
+<p class="p1"><br></p>
+<p class="p1"><span class="Apple-converted-space">  </span>background: #58733d;</p>
+<p class="p1"><br></p>
+<p class="p1"><span class="Apple-converted-space">  </span>color: white;</p>
+<p class="p1"><br></p>
+<p class="p1"><span class="Apple-converted-space">  </span>font-size: 16px;</p>
+<p class="p1"><br></p>
+<p class="p1">}</p>
+<p class="p1"><br></p>
+<p class="p1">@media (max-width: 768px) {</p>
+<p class="p1"><br></p>
+<p class="p1"><span class="Apple-converted-space">  </span>section {</p>
+<p class="p1"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>padding: 60px 6%;</p>
+<p class="p1"><br></p>
+<p class="p1"><span class="Apple-converted-space">  </span>}</p>
+<p class="p1"><br></p>
+<p class="p1"><span class="Apple-converted-space">  </span>.hero {</p>
+<p class="p1"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>padding: 40px 6%;</p>
+<p class="p1"><br></p>
+<p class="p1"><span class="Apple-converted-space">  </span>}</p>
+<p class="p1"><br></p>
+<p class="p1"><span class="Apple-converted-space">  </span>.hero p {</p>
+<p class="p1"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>font-size: 18px;</p>
+<p class="p1"><br></p>
+<p class="p1"><span class="Apple-converted-space">  </span>}</p>
+<p class="p1"><br></p>
+<p class="p1">}</p>
+<p class="p1"><br></p>
+<p class="p1">&lt;/style&gt;</p>
+<p class="p1"><br></p>
+<p class="p1">&lt;/head&gt;</p>
+<p class="p1"><br></p>
+<p class="p1">&lt;body&gt;</p>
+<p class="p1"><br></p>
+<p class="p1">&lt;header class="hero"&gt;</p>
+<p class="p1"><br></p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;div class="hero-content fade-in"&gt;</p>
+<p class="p1"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;div class="badge"&gt;宜蘭三星・稻庄休閒農場&lt;/div&gt;</p>
+<p class="p1"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;h1&gt;走進田裡，才知道一粒米的故事。&lt;/h1&gt;</p>
+<p class="p1"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;p&gt;</p>
+<p class="p1"><br></p>
+<p class="p1"><span class="Apple-converted-space">      </span>這裡不只是農場，而是一段從土地、親子、食農體驗到在地生活的旅程。</p>
+<p class="p1"><br></p>
+<p class="p1"><span class="Apple-converted-space">      </span>來稻庄，讓孩子玩得開心，也讓大人重新感受土地的溫度。</p>
+<p class="p1"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;/p&gt;</p>
+<p class="p1"><br></p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;/div&gt;</p>
+<p class="p1"><br></p>
+<p class="p1">&lt;/header&gt;</p>
+<p class="p1"><br></p>
+<p class="p1">&lt;section class="intro fade-in"&gt;</p>
+<p class="p1"><br></p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;div class="container"&gt;</p>
+<p class="p1"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;h2 class="section-title"&gt;為什麼稻庄值得被記住？&lt;/h2&gt;</p>
+<p class="p1"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;p&gt;</p>
+<p class="p1"><br></p>
+<p class="p1"><span class="Apple-converted-space">      </span>稻庄休閒農場把宜蘭三星的田園風景，轉化成適合親子、團體與戶外教學的體驗場域。</p>
+<p class="p1"><br></p>
+<p class="p1"><span class="Apple-converted-space">      </span>來到這裡，遊客不是只「看農場」，而是能親手參與、親眼觀察、親身感受。</p>
+<p class="p1"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;/p&gt;</p>
+<p class="p1"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;div class="cards"&gt;</p>
+<p class="p1"><br></p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;div class="card fade-in"&gt;</p>
+<p class="p1"><br></p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;h3&gt;一、從玩樂開始認識土地&lt;/h3&gt;</p>
+<p class="p1"><br></p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;p&gt;透過餵食水豚、撈魚、釣魚、多肉植物體驗與蔥油餅 DIY，讓孩子自然進入農場情境。&lt;/p&gt;</p>
+<p class="p1"><br></p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;span class="highlight" onclick="showModal('玩樂不是目的，而是讓孩子願意靠近土地的第一步。')"&gt;點我看重點&lt;/span&gt;</p>
+<p class="p1"><br></p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;/div&gt;</p>
+<p class="p1"><br></p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;div class="card fade-in"&gt;</p>
+<p class="p1"><br></p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;h3&gt;二、把食農教育變簡單&lt;/h3&gt;</p>
+<p class="p1"><br></p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;p&gt;不用艱深課程，從一片蔥油餅、一包稻庄米、一場田間體驗開始，就能理解產地與食物的關係。&lt;/p&gt;</p>
+<p class="p1"><br></p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;span class="highlight" onclick="showModal('好的食農教育，不是說教，而是讓人吃得到、摸得到、記得住。')"&gt;點我看重點&lt;/span&gt;</p>
+<p class="p1"><br></p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;/div&gt;</p>
+<p class="p1"><br></p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;div class="card fade-in"&gt;</p>
+<p class="p1"><br></p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;h3&gt;三、讓農場成為回憶&lt;/h3&gt;</p>
+<p class="p1"><br></p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;p&gt;孩子記得的是動物、草地、池水與親手完成的體驗；家長記得的是放鬆、安心與值得再來。&lt;/p&gt;</p>
+<p class="p1"><br></p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;span class="highlight" onclick="showModal('農場真正賣的不是門票，而是一段可以被帶回家的回憶。')"&gt;點我看重點&lt;/span&gt;</p>
+<p class="p1"><br></p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;/div&gt;</p>
+<p class="p1"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;/div&gt;</p>
+<p class="p1"><br></p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;/div&gt;</p>
+<p class="p1"><br></p>
+<p class="p1">&lt;/section&gt;</p>
+<p class="p1"><br></p>
+<p class="p1">&lt;section class="reminder fade-in"&gt;</p>
+<p class="p1"><br></p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;div class="container"&gt;</p>
+<p class="p1"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;div class="reminder-box"&gt;</p>
+<p class="p1"><br></p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;h2 class="section-title"&gt;互動提醒區&lt;/h2&gt;</p>
+<p class="p1"><br></p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;p&gt;點擊下方提醒，看看稻庄想傳達給遊客的核心價值。&lt;/p&gt;</p>
+<p class="p1"><br></p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;div class="reminder-list"&gt;</p>
+<p class="p1"><br></p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;div class="reminder-item" onclick="showModal('親子農場最重要的不是設施多，而是動線清楚、體驗好懂、孩子願意參與。')"&gt;</p>
+<p class="p1"><br></p>
+<p class="p1"><span class="Apple-converted-space">          </span>親子遊客最在意什麼？</p>
+<p class="p1"><br></p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;/div&gt;</p>
+<p class="p1"><br></p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;div class="reminder-item" onclick="showModal('團體與戶外教學需要的是安全、流程、價格清楚，以及老師與家長都放心。')"&gt;</p>
+<p class="p1"><br></p>
+<p class="p1"><span class="Apple-converted-space">          </span>團體客為什麼會選擇農場？</p>
+<p class="p1"><br></p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;/div&gt;</p>
+<p class="p1"><br></p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;div class="reminder-item" onclick="showModal('在地農產品若能結合旅遊體驗，就不只是商品，而是產地故事的延伸。')"&gt;</p>
+<p class="p1"><br></p>
+<p class="p1"><span class="Apple-converted-space">          </span>稻庄米如何賣出價值？</p>
+<p class="p1"><br></p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;/div&gt;</p>
+<p class="p1"><br></p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;/div&gt;</p>
+<p class="p1"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;/div&gt;</p>
+<p class="p1"><br></p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;/div&gt;</p>
+<p class="p1"><br></p>
+<p class="p1">&lt;/section&gt;</p>
+<p class="p1"><br></p>
+<p class="p1">&lt;section class="cta fade-in"&gt;</p>
+<p class="p1"><br></p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;div class="container"&gt;</p>
+<p class="p1"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;h2&gt;稻庄不是單純的農場，而是一個可以被體驗的品牌。&lt;/h2&gt;</p>
+<p class="p1"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;p&gt;</p>
+<p class="p1"><br></p>
+<p class="p1"><span class="Apple-converted-space">      </span>從宜蘭三星的土地出發，把農產、動物、親子活動與食農教育串成完整故事，</p>
+<p class="p1"><br></p>
+<p class="p1"><span class="Apple-converted-space">      </span>稻庄休閒農場可以成為遊客心中「想再來一次」的地方。</p>
+<p class="p1"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;/p&gt;</p>
+<p class="p1"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;button onclick="showModal('核心結論：稻庄要賣的不只是體驗，而是宜蘭三星最有溫度的田園回憶。')"&gt;</p>
+<p class="p1"><br></p>
+<p class="p1"><span class="Apple-converted-space">      </span>看核心結論</p>
+<p class="p1"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;/button&gt;</p>
+<p class="p1"><br></p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;/div&gt;</p>
+<p class="p1"><br></p>
+<p class="p1">&lt;/section&gt;</p>
+<p class="p1"><br></p>
+<p class="p1">&lt;div class="modal" id="modal"&gt;</p>
+<p class="p1"><br></p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;div class="modal-content"&gt;</p>
+<p class="p1"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;h3&gt;重點提醒&lt;/h3&gt;</p>
+<p class="p1"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;p id="modalText"&gt;&lt;/p&gt;</p>
+<p class="p1"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;button class="close" onclick="closeModal()"&gt;我知道了&lt;/button&gt;</p>
+<p class="p1"><br></p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;/div&gt;</p>
+<p class="p1"><br></p>
+<p class="p1">&lt;/div&gt;</p>
+<p class="p1"><br></p>
+<p class="p1">&lt;script&gt;</p>
+<p class="p1"><br></p>
+<p class="p1">const fadeElements = document.querySelectorAll('.fade-in');</p>
+<p class="p1"><br></p>
+<p class="p1">const observer = new IntersectionObserver(entries =&gt; {</p>
+<p class="p1"><br></p>
+<p class="p1"><span class="Apple-converted-space">  </span>entries.forEach(entry =&gt; {</p>
+<p class="p1"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>if (entry.isIntersecting) {</p>
+<p class="p1"><br></p>
+<p class="p1"><span class="Apple-converted-space">      </span>entry.target.classList.add('show');</p>
+<p class="p1"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>}</p>
+<p class="p1"><br></p>
+<p class="p1"><span class="Apple-converted-space">  </span>});</p>
+<p class="p1"><br></p>
+<p class="p1">}, {</p>
+<p class="p1"><br></p>
+<p class="p1"><span class="Apple-converted-space">  </span>threshold: 0.15</p>
+<p class="p1"><br></p>
+<p class="p1">});</p>
+<p class="p1"><br></p>
+<p class="p1">fadeElements.forEach(el =&gt; observer.observe(el));</p>
+<p class="p1"><br></p>
+<p class="p1">function showModal(text) {</p>
+<p class="p1"><br></p>
+<p class="p1"><span class="Apple-converted-space">  </span>document.getElementById('modalText').innerText = text;</p>
+<p class="p1"><br></p>
+<p class="p1"><span class="Apple-converted-space">  </span>document.getElementById('modal').style.display = 'flex';</p>
+<p class="p1"><br></p>
+<p class="p1">}</p>
+<p class="p1"><br></p>
+<p class="p1">function closeModal() {</p>
+<p class="p1"><br></p>
+<p class="p1"><span class="Apple-converted-space">  </span>document.getElementById('modal').style.display = 'none';</p>
+<p class="p1"><br></p>
+<p class="p1">}</p>
+<p class="p1"><br></p>
+<p class="p1">document.getElementById('modal').addEventListener('click', function(e) {</p>
+<p class="p1"><br></p>
+<p class="p1"><span class="Apple-converted-space">  </span>if (e.target === this) closeModal();</p>
+<p class="p1"><br></p>
+<p class="p1">});</p>
+<p class="p1"><br></p>
+<p class="p1">&lt;/script&gt;</p>
+<p class="p1"><br></p>
+<p class="p1">&lt;/body&gt;</p>
+<p class="p1"><br></p>
+<p class="p1">&lt;/html&gt;</p>
+
+</body>
+</html>
